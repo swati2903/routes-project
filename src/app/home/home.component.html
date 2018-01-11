@@ -1,0 +1,21 @@
+<div class="row row-head">
+    <div class="card-header col-sm-3 col-md-3 col-lg-3" *ngFor="let photo of photos | paginate: {itemsPerPage: 8, currentPage:page, id: '1'}; let i=index;" (click)="navigateToDetail(photo)">
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title class="card-title">
+                   {{photo.title}}
+                </mat-card-title>
+            </mat-card-header>
+                <img mat-card-image class="card-image"src="{{photo.thumbnailUrl}}" alt="Photo">
+            <mat-card-content>
+                Description of the image!
+            </mat-card-content>
+        </mat-card> 
+    </div> 
+</div>
+  
+  <pagination-controls (pageChange)="page = $event" id="1" style="position:relative;left:375px"
+    maxSize="5"
+    directionLinks="true"
+    autoHide="true">
+  </pagination-controls>

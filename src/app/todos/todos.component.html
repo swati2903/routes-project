@@ -1,0 +1,12 @@
+<div class="column todo" style=" padding:0px;margin:0px;">
+    <div *ngFor="let todo of todos | paginate: {itemsPerPage: 4, currentPage:page, id: '1'}; let i=index;">
+    <h4>{{todo.title}}</h4>
+    <h4>{{todo.completed}}</h4><br>
+    </div>
+    </div>
+    <pagination-controls (pageChange)="page = $event" id="1"
+    maxSize="5"
+    directionLinks="true"
+    autoHide="true">
+    </pagination-controls>
+    

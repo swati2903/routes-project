@@ -1,1 +1,110 @@
 /* You can add global styles to this file, and also import other style files */
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+html, body {
+    position: fixed;
+    top: 0; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  /*html,body {
+      height:100%;
+      width:100%;
+      margin:0;
+      
+  }*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar {
+    padding-left: 0px;
+    background:#002B36;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+/* #sidebar .sidebar-header { 
+    padding: 0;
+    background: #6d7fcc;
+}*/
+
+#sidebar ul.components {
+    padding: 20px ;
+}
+
+/*#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}*/
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color:#002B36;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #002B36;
+}
+/*ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 0 !important;
+    background: #6d7fcc;
+}*/
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}          
+#sidebar {
+    padding: 0px;
+    min-width: 250px;
+    max-width: 250px;
+    height:90%;
+    
+}
+.enterpriseHeader{
+    background-color:#002B36;
+    margin: 0;
+    padding:0;
+    height:10%;
+    color:white;
+}
+.toggleClass{
+    margin: 0;
+    padding:0 ;
+    background-color:lightgrey;
+    height:10%;
+    font-size:18px;
+}
+#sidebarNav{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.demo-sidebar{
+    background-color:#002B36;
+}

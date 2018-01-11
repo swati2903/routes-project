@@ -1,0 +1,22 @@
+<!-- <div class=" comments-head"> -->
+        <div class="row " *ngFor="let comment of comments | paginate: {itemsPerPage: 3, currentPage:page, id: '1'}; let i=index;">
+                <div class="col-md-3"></div>
+                        <p-panel class="col-md-6" >
+                                <p-header><span class="glyphicon glyphicon-user"></span> &nbsp;{{comment.name|slice:0:10}}
+                                </p-header>
+                        <h4>{{comment.body|slice:0:25}}</h4>
+                                <p-footer>
+                                <h5>
+                                        <button (click)="like(comment)">Like {{comment.like}}<span class="glyphicon glyphicon-thumbs-up"></span></button>&nbsp; &nbsp;
+                                        <button (click)="dislike(comment)">Dislike {{comment.dislike}}<span class="glyphicon glyphicon-thumbs-down"></span></button>
+                                </h5>
+                                </p-footer>
+                        </p-panel><br>
+        </div>
+
+<!-- </div> -->
+<pagination-controls (pageChange)="page = $event" id="1" style="position:relative;left:400px"
+maxSize="5"
+directionLinks="true"
+autoHide="true">
+</pagination-controls>

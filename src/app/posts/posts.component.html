@@ -1,0 +1,20 @@
+<div class="row post-head" *ngFor="let post of posts">
+        <div class="col-md-3"></div><br>
+            <p-panel class="col-md-6">
+                <p-header><span class="glyphicon glyphicon-user"></span> &nbsp;{{post.title|slice:0:18}}
+                </p-header>
+                <h4>{{post.body|slice:0:50}}</h4>
+                <p-footer>
+                    <h5>
+                       <button *ngIf="post.showLike" (click)="like_count(post)">Like &nbsp;<span class="glyphicon glyphicon-thumbs-up"></span></button>
+                       <button *ngIf="!post.showLike" class="btn btn-primary" (click)="like_count(post)">Liked</button> &nbsp; &nbsp;
+                       <button (click)="comment_count(post)">Comment &nbsp;<span class="glyphicon glyphicon-comment"></span></button>  &nbsp; &nbsp;
+                       <button (click)="share_count(post)">Share &nbsp;<span class="glyphicon glyphicon-share"></span></button>  
+                    </h5>
+                </p-footer>
+            </p-panel><br>
+        <div class="col-md-3"></div><br>
+</div>
+ 
+    
+     

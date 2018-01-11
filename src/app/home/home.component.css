@@ -1,0 +1,29 @@
+.example-card{
+    width:80%;
+    height:90%;
+    }
+.card-title{
+    white-space: nowrap; 
+    width: 10em; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    text-align:left;
+}
+.card-image{
+    height:100px;
+    width:150px;
+    display:block;
+    margin:auto;
+    width:40%;
+}
+.card-header{
+    padding:20px;
+   
+}
+ #smallCard{
+     margin:0;
+ }
+.row-head{
+    padding:0px;
+    margin:0px;
+}
